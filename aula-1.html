@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Primeira Aula WebMobile </title>
+    <script type="text/javascript">
+        function soma(a, b) {
+            alert("A soma é: " + (a + b));
+        }
+    </script>
+</head>
+<body>
+    <h1>Primeiro Cabeçalho.</h1>
+    <h2>Segundo Cabeçalho.</h2>
+    <h3>Terceiro Cabeçalho.</h3>
+
+    <p>Primeiro Paragrafo</p>
+
+    <a href="https://youtu.be/uNKOAuuM_08?si=N8k59ZEfmKgpKSrv" target="_blank">Assista ao vídeo</a>
+<br>
+    <img src="img/cachorro.png" title="Primeira Imagem" alt="Imagem de um cachorro" width="300" height="200">
+
+    <h2>Lista Ordenada</h2>
+    <ol>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ol>
+    <h2>Lista Não Ordenada</h2>
+    <ul>
+        <li>Item A</li>
+        <li>Item B</li>
+        <li>Item C</li>
+    </ul>
+
+    <h2>Tabela</h2>
+    <table>
+        <tr>
+            <th>Linha 1 Coluna 1</th>
+            <th>Linha 1 Coluna 2</th>
+        </tr>
+        <tr>
+            <td>Linha 2 Coluna 1</td>
+            <td>Linha 2 Coluna 2</td>
+        </tr>
+        <tr>
+            <td>Linha 3 Coluna 1</td>
+            <td>Linha 3 Coluna 2</td>
+        </tr>
+        <tr>
+            <td>Linha 4 Coluna 1</td>
+            <td>Linha 4 Coluna 2</td>
+        </tr>
+    </table>
+
+    <form action="/cadastro/" method="post">
+        <label for="login">Login:</label>
+        <input type="text" id="login" name="login">
+        <label for="senha">Senha:</label>
+        <input type="password" id="senha" name="senha">
+
+        <label for="idade">Idade</label>
+        <input type="number" min="0" max="120" step="1" id="idade" name="idade">
+
+        <label for="sexo">Sexo</label>
+        <input type="radio" id="masculino" name="sexo" value="1" checked>Masculino
+        <input type="radio" id="feminino" name="sexo" value="2">Feminino
+        <br>
+        <input type="checkbox" id="veiculo1" name="bike" value="bike">Tenho bike
+        <input type="checkbox" id="veiculo2" name="carro" value="carro">Tenho carro
+
+        <label for="curso">Curso</label>
+        <select name="curso" id="curso">
+            <option value="Jornalismo">Jornalismo</option>
+            <option value="Direito">Direito</option> 
+            <option value="Engenharia">Engenharia</option>
+            <option value="Ciência da Computação">Ciência da Computação</option>
+        </select>
+        <input type="date" name="data_de_nascimento" min="2025-01-02">Data de Nascimento</label>
+        <br>
+
+        <label for="mensagem">Mensagem:</label>
+        <br>
+        <textarea id="mensagem" name="mensagem" rows="4" cols="40"></textarea>
+        <br>
+        
+        <label for="queijo">Tipo de Queijos</label>
+        <input list="queijos" id="queijo" name="queijo">
+        <datalist id="queijos">
+            <option value="Mussarela">
+            <option value="Parmesão">
+            <option value="Prato">
+            <option value="Gorgonzola">
+            <option value="Brie">
+            <option value="Provolone">
+            <option value="Cheddar">
+        </datalist>
+
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+
+        <button type="button" onclick="alert('Botão clicado!')">Clique Aqui</button>
+        <button type="button" onclick="soma(5, 10);">Botao 2</button>
+    </form>
+</body>
+</html>
