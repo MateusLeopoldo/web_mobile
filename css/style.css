@@ -1,0 +1,8 @@
+.meu-carrossel {
+    max-width: 400px;
+    margin: auto;
+}
+.meu-carrossel .carousel-inner img {
+    max-height: 250px;
+    object-fit: cover;
+}
